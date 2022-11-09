@@ -14,16 +14,16 @@ import edu.wpi.first.wpilibj.XboxController;
  * constants are needed, to reduce verbosity.
  */
 public final class Constants {
-    //Driver Controller
-    public static final int XBOX_DRIVER = 0;
-	public static final int DRIVE_FWD_REV = XboxController.Axis.kLeftY.value;
-	public static final int DRIVE_LEFT_RIGHT = XboxController.Axis.kRightX.value;
-	public static final int REVERSE_DRIVE_DIRECTION = XboxController.Button.kLeftStick.value;
-	public static final int OVERRIDE_MOTOR_PROTECTION = XboxController.Button.kB.value;
-	public static final int PRECISION_DRIVE_TOGGLE = XboxController.Button.kX.value;
-	public static final int PRECISION_DRIVE_HOLD = XboxController.Axis.kLeftTrigger.value;
+    static final class XBox {
+        public static final int DRIVER = 0;
 
-    //DriveTrain Motors
-    public static final int RIGHT_CANSPARK = 1;
-	public static final int LEFT_CANSPARK = 2;
+    	public static final int DRIVE_FWD_REV = XboxController.Axis.kLeftY.value;
+    	public static final int DRIVE_LEFT_RIGHT = XboxController.Axis.kRightX.value;
+    	public static final int OVERRIDE_MOTOR_PROTECTION = XboxController.Button.kB.value;
+    }
+
+    static final class MotorController {
+    	public static final int LEFT_SPARK = 1;
+    	public static final int RIGHT_SPARK = 2;
+    }
 }
