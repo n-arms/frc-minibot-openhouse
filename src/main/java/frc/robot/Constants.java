@@ -14,7 +14,7 @@ import edu.wpi.first.wpilibj.XboxController;
  * constants are needed, to reduce verbosity.
  */
 public final class Constants {
-    static final class XBox {
+    public static final class Xbox {
         public static final int DRIVER = 0;
 
     	public static final int DRIVE_FWD_REV = XboxController.Axis.kLeftY.value;
@@ -22,8 +22,9 @@ public final class Constants {
     	public static final int OVERRIDE_MOTOR_PROTECTION = XboxController.Button.kB.value;
     }
 
-    static final class MotorController {
+    public static final class MotorController {
     	public static final int LEFT_SPARK = 1;
     	public static final int RIGHT_SPARK = 2;
+        public static final double SPEED_FACTOR = 0.5;
     }
 }
